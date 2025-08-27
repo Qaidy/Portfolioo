@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/b6b49c6ad2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container" data-aos="fade-up" data-aos-duration="1000" data-aos="delay=100">
+        <div class="logo">
+            <a href="index.html">Qaidy's Portfolio</a>
+        </div>
+        <div class="nav-links" data-aos="fade-up" data-aos-duration="1000" data-aos="delay=100">
+            <div class="link"><a href="index.html">Home</a></div>
+            <div class="link"><a href="skills.html">Skills</a></div>
+            <div class="link"><a href="testimoni.html">Testimonial</a></div>
+            <div class="link"><a href="#Certificate">Certificate</a></div>
+            <div class="contact-button"><a href="https://web.whatsapp.com/" target="_blank">Contact</a></div>
+        </div>
+        <div class="hamburger" onclick="hamburger()">
+            <i class="fa-solid fa-bars" style="color: #808080;"></i>
+        </div>
+        </div>
+        <div class="dropdown">
+            <div class="hamburger-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Certificate</a>
+                <a href="#">Contact</a>
+                <div class="cancel" onclick="cancel()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-container">
+        
+        <div class="image" data-aos="fade-up" data-aos-duration="1000" data-aos="delay=100">
+            <img src="assets/src/img/96e8d7bf-e76d-4ab3-97f0-a7ef590f5941.jpg" alt="gambar minion">
+        </div>
+
+        <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos="delay=100">
+            <h1>Hey I'm <span>Qaidy</span></h1> 
+            <p class="typewriter">I'm a <span></span></p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Doloremque perspiciatis obcaecati nulla reprehenderit <br>similique aliquam neque ad eveniet cumque ut!</p>
+        <div class="link-sosmed">
+            <a href="https://github.com/Qaidy" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #000000;"></i></a>
+            <a href="https://www.linkedin.com/in/qaidy-rasyid-810633376/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #0a66c2;"></i></a>
+            <a href="https://www.youtube.com/@QaidyRasyid" target="_blank"><i class="fa-brands fa-youtube fa-xl" style="color: #ff0000;"></i></a>
+        </div>
+        <div class="btn">
+            <button>Download CV</button>
+        </div>
+        
+    </div>
+        <div class="sosmed"></div>
+
+        
+
+
+
+
+
+
+
+
+    </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+<script>
+    function hamburger(){
+        const navbar = document.querySelector(".dropdown")
+        navbar.style.transform = "translateY(0px)"
+    }
+    function cancel(){
+        const navbar = document.querySelector(".dropdown")
+        navbar.style.transform = "translateY(-500px)"
+    }
+</script>
+
+
+</html>
