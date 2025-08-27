@@ -401,8 +401,16 @@ body.skills-body {
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px;
+    margin-top: 70px;
     max-width: 200px;
+}
+
+.footer-skills {
+    padding: 20px;
+    margin-top: 145px;
+    text-align: center;
+    clear: both;
 }
 
 .skill i {
