@@ -402,18 +402,44 @@ body.skills-body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 20px;
     margin: 20px;
-    margin-top: 70px;
+    margin-top: 100px;
     max-width: 200px;
 }
 
-.footer-skills {
-    padding: 20px;
-    margin-top: 145px;
-    text-align: center;
-    clear: both;
-}
+
 
 .skill i {
     font-size: 8em;
     margin-bottom: 10px;
+}
+
+/* css sertifikat */
+
+.sertifikat-header {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sertifikat-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    gap: 25px;
+    margin: auto;
+}
+
+
+.serti img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
 }
