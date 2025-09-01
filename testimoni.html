@@ -29,11 +29,11 @@
         </div>
         <div class="dropdown">
             <div class="hamburger-links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Certificate</a>
-                <a href="#">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="skills.html">Skills</a>
+                <a href="sertifikat.html">Certificate</a>
+                <a href="testimoni.html">Testimonial</a>
+                <a href="https://web.whatsapp.com/" target="_blank">Contact</a>
                 <div class="cancel" onclick="cancel()">
                     <i class="fa-solid fa-xmark"></i>
                 </div>
@@ -115,5 +115,16 @@
   <script>
     AOS.init();
   </script>
+
+  <script>
+    function hamburger(){
+        const navbar = document.querySelector(".dropdown")
+        navbar.style.transform = "translateY(0px)"
+    }
+    function cancel(){
+        const navbar = document.querySelector(".dropdown")
+        navbar.style.transform = "translateY(-500px)"
+    }
+</script>
 </body>
 </html>
