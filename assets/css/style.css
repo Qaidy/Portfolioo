@@ -231,6 +231,37 @@ section {
     text-shadow: rgb(243, 189, 90) 0px 0px 7px; /* shadow glowing */
 }
 
+.typewriter {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    display: inline-block; /* penting biar cursor nempel */
+    position: relative;
+}
+
+/* cursor kedip */
+.typewriter::after {
+    content: "|";
+    position: absolute;
+    right: -15px; /* jarak cursor dari teks */
+    color: rgb(243, 189, 90);
+    text-shadow: rgb(243, 189, 90) 0px 0px 7px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0; }
+}
+
+
+@keyframes blink {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 @keyframes words {
     0%   { content: "Developer"; }
     20%  { content: "Designer"; }
