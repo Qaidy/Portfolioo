@@ -217,20 +217,28 @@ section {
     background-color: rgb(227, 152, 12);
 }
 
-@keyframes cursor {
-    0% {opacity: 1;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
+.typewriter .words::after {
+    content: "Developer"; /* default pertama */
+    animation: words 10s infinite;
+}
 
+/* cursor */
+.typewriter .words::after {
+    content: "Developer";
+    animation: words 10s infinite;
+    color: rgb(243, 189, 90); /* warna emas kek di tema lo */
+    font-weight: bold;
 }
 
 @keyframes words {
-    0% { content: "Developer";}
-    20% { content: "Designer";}
-    40% { content :"Programmer";}
-    60% { content: "Creator";}
-    80% {content: "Coder";}
+    0%   { content: "Developer"; }
+    20%  { content: "Designer"; }
+    40%  { content: "Programmer"; }
+    60%  { content: "Creator"; }
+    80%  { content: "Coder"; }
+    100% { content: "Developer"; }
 }
+
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
