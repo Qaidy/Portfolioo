@@ -228,6 +228,7 @@ section {
     animation: words 10s infinite;
     color: rgb(243, 189, 90); /* warna emas kek di tema lo */
     font-weight: bold;
+    text-shadow: rgb(243, 189, 90) 0px 0px 7px; /* shadow glowing */
 }
 
 @keyframes words {
