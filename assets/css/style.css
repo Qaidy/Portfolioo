@@ -217,6 +217,21 @@ section {
     background-color: rgb(227, 152, 12);
 }
 
+@keyframes cursor {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
+
+@keyframes words {
+    0% { content: "Developer";}
+    20% { content: "Designer";}
+    40% { content :"Programmer";}
+    60% { content: "Creator";}
+    80% {content: "Coder";}
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
     .logo{
